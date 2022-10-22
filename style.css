@@ -1,0 +1,76 @@
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.bola {
+    display: inline-block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0;
+    background: white;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: rgb(233, 233, 233);
+    border-radius: 20px;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: aquamarine;
+}
+
+.balls {
+    margin-bottom: 20px;
+}
+
+#beats {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#submit-input {
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+.start-button {
+    background-color: rgb(255, 31, 31);
+    font-weight: 800;
+    color: seashell;
+}
+
+.start-button:hover {
+    color: black;
+}
+
+.stop-button {
+    background-color: crimson;
+    color: white;
+}
+
+.stop-button:hover {
+    background-color: crimson;
+    color: black;
+}
