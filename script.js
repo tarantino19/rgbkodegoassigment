@@ -64,6 +64,14 @@ function getRandomRGBNine() {
     return 'rgb(' + red + ', ' + green + ', ' + blue + ')';
 }
 
+function getRandomRGBEmojis() {
+    let num = Math.round(0xffffff * Math.random());
+    let red = num >> 16;
+    let green = num >> 8 & 255;
+    let blue = num & 255;
+    return 'rgb(' + red + ', ' + green + ', ' + blue + ')';
+}
+
 //It generates a number between 0 and 0xfffff (or 2^24, the highest number you can get from 24 bits). The highest value you can get from 8 bits is 255. This algorithm takes the left-most 8 bits of the random number for RED, the middle 8 bits for GREEN, and the last 8 bits for BLUE, using all 24 bits of the random number.
 
 function sparklingBall () {
@@ -76,6 +84,7 @@ function sparklingBall () {
     let ballSeven= document.getElementById("ball7") 
     let ballEight= document.getElementById("ball8") 
     let ballNine = document.getElementById("ball9") 
+    let emojis = document.getElementById ("emojis")
 
     let rgbOne  = getRandomRGBOne()
     let rgbTwo  = getRandomRGBTwo()
@@ -86,6 +95,7 @@ function sparklingBall () {
     let rgbSeven = getRandomRGBSeven()
     let rgbEight  = getRandomRGBEight()
     let rgbNine  = getRandomRGBNine()
+    let emojiTen = getRandomRGBEmojis ()
 
     //bg color change
     ballOne.style.backgroundColor = rgbOne
@@ -108,6 +118,7 @@ function sparklingBall () {
     ballSeven.style.color= rgbThree
     ballEight.style.color = rgbTwo
     ballNine.style.color = rgbOne
+    emojis.style.color = emojiTen
 
 
     let ball1Color = document.getElementById ("ball1-color")
