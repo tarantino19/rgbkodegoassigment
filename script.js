@@ -57,22 +57,18 @@ function getRandomRGBEight() {
 }
 
 function getRandomRGBNine() {
-    let num = Math.round(0xffffff * Math.random());
-    let red = num >> 16;
-    let green = num >> 8 & 255;
-    let blue = num & 255;
+    let red = Math.floor(Math.random() * 256);
+    let green = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
     return 'rgb(' + red + ', ' + green + ', ' + blue + ')';
 }
 
 function getRandomRGBEmojis() {
-    let num = Math.round(0xffffff * Math.random());
-    let red = num >> 16;
-    let green = num >> 8 & 255;
-    let blue = num & 255;
+    let red = Math.floor(Math.random() * 256);
+    let green = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
     return 'rgb(' + red + ', ' + green + ', ' + blue + ')';
 }
-
-//It generates a number between 0 and 0xfffff (or 2^24, the highest number you can get from 24 bits). The highest value you can get from 8 bits is 255. This algorithm takes the left-most 8 bits of the random number for RED, the middle 8 bits for GREEN, and the last 8 bits for BLUE, using all 24 bits of the random number.
 
 function sparklingBall () {
     let ballOne = document.getElementById("ball1") 
