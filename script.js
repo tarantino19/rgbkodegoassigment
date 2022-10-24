@@ -148,6 +148,7 @@ function partyBeat() {
 
 function stopFunction () {
     clearInterval(party)
+    clearInterval(newParty)
 }
 
 function stopFunctionTwo (){
