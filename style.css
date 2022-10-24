@@ -28,6 +28,8 @@ body {
     background: white;
     border-radius: 100px;
     margin-bottom: 20px;
+    font-weight: 900;
+    font-family: serif;
 }
 
 button {
